@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Makeup Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ffcccc;
+      padding: 10px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+    section {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+    .product {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 10px;
+      width: 200px;
+      text-align: center;
+    }
+    footer {
+      background-color: #ffcccc;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Makeup Shop</h1>
+  </header>
+  <section>
+    <div class="product">
+      <h2>Blush</h2>
+      <p>Our beautiful blush will give your cheeks a natural rosy glow.</p>
+      <button onclick="addToCart('Blush')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <h2>Mascara</h2>
+      <p>Lengthen and volumize your lashes with our top-quality mascara.</p>
+      <button onclick="addToCart('Mascara')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <h2>Beauty Blender</h2>
+      <p>Blend your makeup flawlessly with our soft, reusable beauty blender.</p>
+      <button onclick="addToCart('Beauty Blender')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <h2>Lip Gloss</h2>
+      <p>Get glossy and hydrated lips with our long-lasting lip gloss.</p>
+      <button onclick="addToCart('Lip Gloss')">Add to Cart</button>
+    </div>
+  </section>
+  <footer>
+    &copy; 2022 Makeup Shop
+  </footer>
+  <script>
+    function addToCart(product) {
+      alert(product + ' added to cart!');
+      // You can add more complex cart functionality here using JavaScript
+    }
+  </script>
+</body>
+</html>
